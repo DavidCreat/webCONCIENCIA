@@ -1,0 +1,156 @@
+/* Estilos para la animación de fondo */
+body {
+    background-image: radial-gradient(circle, #053735, #00525a, #006d87, #0088b9, #12a0eb);
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Estilos para el navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+/* Estilos para el logo en la barra de navegación */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px; /* Añade margen derecho para separar el logo de otros elementos */
+}
+
+/* Estilos para el video en la sección "video-section" */
+.video-section {
+    display: flex;
+    justify-content: space-between; /* Alinea el contenido alrededor del video */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.video-thumbnail {
+    flex: 1;
+    padding: 20px;
+}
+
+.video-info {
+    flex: 1;
+    padding: 20px;
+    text-align: right; /* Alinea el texto a la derecha */
+    color: #fff;
+}
+
+
+/* Estilos para las cards 
+.card-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    width: 30%;
+    margin: 10px;
+}
+*/
+
+/* Estilos para la nueva sección */
+.titulo-mid {
+    padding: 40px; /* Espaciado interior */
+    text-align: center; /* Centrar el contenido */
+    margin-bottom: 20px;
+    position: relative; /* Para habilitar la animación */
+    animation: bounce 5s infinite; /* Aplicar la animación "bounce" durante 2 segundos y repetirla infinitamente */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Posición inicial y final */
+    }
+    50% {
+        transform: translateY(-20px); /* Posición más alta en el brinco */
+    }
+}
+
+.seccion-contenido {
+    max-width: 800px; /* Establece el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamaño del título grande */
+    color: #ffffff; /* Color del título */
+}
+
+h2 {
+    font-size: 1.5rem; /* Tamaño del subtítulo */
+    color: #d4d1d1; /* Color del subtítulo */
+}
+
+
+/* Estilos para la sección del carrusel */
+.carousel-section {
+    margin: 100px 0; /* Agrega margen superior e inferior a la sección del carrusel */
+    padding: 20px; /* Agrega relleno interno para evitar que el margen afecte a los elementos internos */
+}
+
+.carousel {
+    max-width: 100%;
+}
+
+/* Estilos personalizados para el carrusel en la sección "carousel-section" Ancho (px): 608px Altura (px): 342px */
+.carousel-section .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px; /* Establece el alto deseado */
+}
+
+.carousel-section .carousel .carousel-inner {
+    text-align: center;
+}
+
+.carousel-section .carousel .carousel-item img {
+    max-width: 100%; /* Establece el ancho máximo */
+    max-height: 100%; /* Establece el alto máximo */
+    display: inline-block;
+    border-radius: 1.25rem;
+}
+
+
+
+/* Estilos para el footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-icons {
+    font-size: 24px;
+}
+
+.footer-icons a {
+    color: #fff;
+    margin: 0 10px;
+}
+
